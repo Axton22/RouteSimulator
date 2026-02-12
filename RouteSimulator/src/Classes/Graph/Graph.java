@@ -302,7 +302,10 @@ public class Graph {
                 vertex.getTypeState().getState().setState('S');
         }
         else {
-            System.out.println("El tipo de estado es incorrecto o está mal escrito");
+            vertex.getTypeState().setTypeName("Casual");
+            vertex.getTypeState().getState().setState('S');
+            System.out.println("El tipo de estado es incorrecto o está mal escrito,"
+                    + " no se clasificara, mantendra el yipo de estado por defecto");
         }
     }
     
